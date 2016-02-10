@@ -16,10 +16,10 @@ public class Timing {
 
     public static <A> A timed(String description,
                               Supplier<A> code) {
-        // final Consumer<String> defaultPrinter = System.out::println;
+        final Consumer<String> defaultPrinter = System.out::println;
 
         // change default to do nothing 
-        final Consumer<String> defaultPrinter = (s) -> {};  
+        // final Consumer<String> defaultPrinter = (s) -> {};  
 
         return timed(description, defaultPrinter, code);
     }
