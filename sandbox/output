@@ -1,19 +1,30 @@
-Feb 10, 2016 6:34:16 AM ProfitIsolation$$Lambda$10/1146743572 accept
-INFO: ProfitIsolation: Profit calculation took 1647 ms
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.ProfitGeneralize: Cost calculation took 53 ms
-ProfitGeneralize: Revenue calculation took 221 ms
-ProfitGeneralize: Profit calculation took 1526 ms
-.ProfitNaive: Cost calculation took 58 ms
-ProfitNaive: Revenue calculation took 57 ms
-ProfitNaive: Profit calculation took 70 ms
-..ProfitDeduplicate: Cost calculation took 148 ms
-ProfitDeduplicate: Revenue calculation took 40 ms
-ProfitDeduplicate: Profit calculation took 89 ms
-.ProfitIsolation: Cost calculation took 1183 ms
-ProfitIsolation: Revenue calculation took 1286 ms
-
-Time: 6.781
-
-OK (5 tests)
-
+ProfitJava6.java:1: error: package com.google.common.base does not exist
+import com.google.common.base.Supplier;
+                             ^
+ProfitJava6.java:11: error: cannot find symbol
+            new Supplier<Double>() {
+                ^
+  symbol:   class Supplier
+  location: class ProfitJava6
+ProfitJava6.java:19: error: cannot find symbol
+            new Supplier<Double>() {
+                ^
+  symbol:   class Supplier
+  location: class ProfitJava6
+ProfitJava6.java:27: error: cannot find symbol
+            LoggerFunctions.info(logger),
+            ^
+  symbol:   variable LoggerFunctions
+  location: class ProfitJava6
+ProfitJava6.java:28: error: cannot find symbol
+            new Supplier<Double>() {
+                ^
+  symbol:   class Supplier
+  location: class ProfitJava6
+ProfitJava6.java:35: error: incompatible types: unexpected return value
+    return profit;
+           ^
+ProfitTest.java:33: error: 'void' type not allowed here
+        assertEquals(18845.9, ProfitJava6.calculate(), 0.001);
+                                                   ^
+7 errors

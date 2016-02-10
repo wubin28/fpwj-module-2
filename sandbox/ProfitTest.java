@@ -27,4 +27,9 @@ public class ProfitTest {
     public void ProfitIsolation_should_calculate_profits() {
         assertEquals(18845.9, ProfitIsolation.calculate(), 0.001);
     }
+
+    @Test
+    public void ProfitJava6_should_calculate_profits() {
+        assertEquals(18845.9, ProfitJava6.calculate(), 0.001);
+    }
 }
