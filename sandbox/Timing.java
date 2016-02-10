@@ -1,6 +1,7 @@
 
 import java.util.Date;
 import java.util.function.Supplier;
+import java.util.function.Consumer;
 
 public class Timing {
 
