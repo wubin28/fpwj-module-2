@@ -6,11 +6,11 @@ public class ProfitGeneralize {
 
         final Double costs = Timing.timed(
                 "Cost calculation",
-                Example::calculateCosts);
+                ProfitGeneralize::calculateCosts);
 
         final Double revenue = Timing.timed(
                 "Revenue calculation",
-                Example::calculateRevenue);
+                ProfitGeneralize::calculateRevenue);
 
         final Double profit = Timing.timed(
                 "Profit calculation",

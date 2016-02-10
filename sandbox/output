@@ -1,11 +1,15 @@
-ProfitGeneralize.java:9: error: cannot find symbol
-                Example::calculateCosts);
-                ^
-  symbol:   variable Example
-  location: class ProfitGeneralize
-ProfitGeneralize.java:13: error: cannot find symbol
-                Example::calculateRevenue);
-                ^
-  symbol:   variable Example
-  location: class ProfitGeneralize
-2 errors
+JUnit version 4.11-SNAPSHOT-20120416-1530
+.Cost calculation took 815 ms
+Revenue calculation took 923 ms
+Profit calculation took 1682 ms
+.Cost calculation took 20 ms
+Revenue calculation took 109 ms
+Profit calculation took 14 ms
+..Cost calculation took 118 ms
+Revenue calculation took 53 ms
+Profit calculation took 30 ms
+
+Time: 4.241
+
+OK (4 tests)
+
