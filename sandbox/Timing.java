@@ -36,7 +36,7 @@ public class Timing {
         return result;
     }
 
-  private static Function<String, Void> DO_NOTHING = new Function<String, Void>(){
+  private static MyFunction<String, Void> DO_NOTHING = new MyFunction<String, Void>(){
     @Override
     public Void apply(java.lang.String s) {
       return null;
@@ -49,7 +49,7 @@ public class Timing {
   }
 
   public static <A> A timedJava6(String description,
-                            Function<String, Void> output,
+                            MyFunction<String, Void> output,
                             MySupplier<A> code) {
 
     final Date before = new Date();
