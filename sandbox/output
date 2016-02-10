@@ -1,12 +1,22 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.Cost calculation took 29 ms
-Revenue calculation took 70 ms
-Profit calculation took 73 ms
-..Cost calculation took 44 ms
-Revenue calculation took 86 ms
-Profit calculation took 110 ms
-
-Time: 0.534
-
-OK (3 tests)
-
+ProfitGeneralize.java:3: error: package com.jessitron.fp4j.m2.iv_generalizeType does not exist
+import static com.jessitron.fp4j.m2.iv_generalizeType.Timing.timed;
+                                                     ^
+ProfitGeneralize.java:3: error: static import only from classes and interfaces
+import static com.jessitron.fp4j.m2.iv_generalizeType.Timing.timed;
+^
+ProfitGeneralize.java:10: error: cannot find symbol
+                Example::calculateCosts);
+                ^
+  symbol:   variable Example
+  location: class ProfitGeneralize
+ProfitGeneralize.java:14: error: cannot find symbol
+                Example::calculateRevenue);
+                ^
+  symbol:   variable Example
+  location: class ProfitGeneralize
+ProfitGeneralize.java:16: error: cannot find symbol
+        final Double profit = timed(
+                              ^
+  symbol:   method timed(String,()->calcul[...]enue))
+  location: class ProfitGeneralize
+5 errors

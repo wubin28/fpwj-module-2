@@ -1,18 +1,19 @@
 
 import java.util.Random;
+import static com.jessitron.fp4j.m2.iv_generalizeType.Timing.timed;
 
-public class ProfitDeduplicate {
+public class ProfitGeneralize {
     public static Double calculate() {
 
-        final Double costs = Timing.timedDouble(
+        final Double costs = timed(
                 "Cost calculation",
-                ProfitDeduplicate::calculateCosts);
+                Example::calculateCosts);
 
-        final Double revenue = Timing.timedDouble(
+        final Double revenue = timed(
                 "Revenue calculation",
-                () -> calculateRevenue());
+                Example::calculateRevenue);
 
-        final Double profit = Timing.timedDouble(
+        final Double profit = timed(
                 "Profit calculation",
                 () -> calculateProfit(costs, revenue));
 
@@ -37,7 +38,7 @@ public class ProfitDeduplicate {
     }
 
     private static final Random r = new Random();
-    private static final Integer MAX_WORK_TIME_MS = 200;
+    private static final Integer MAX_WORK_TIME_MS = 2000;
     private static void pretendToWorkHard() {
         try {
             Thread.sleep(r.nextInt(MAX_WORK_TIME_MS));
