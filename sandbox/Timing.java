@@ -35,4 +35,30 @@ public class Timing {
         printer.accept(description + " took " + duration + " ms");
         return result;
     }
+
+  private static Function<String, Void> DO_NOTHING = new Function<String, Void>(){
+    @Override
+    public Void apply(java.lang.String s) {
+      return null;
+    }
+  };
+
+  public static <A> A timedJava6(String description,
+                            Supplier<A> code) {
+    return timed(description, DO_NOTHING, code);
+  }
+
+  public static <A> A timedJava6(String description,
+                            Function<String, Void> output,
+                            Supplier<A> code) {
+
+    final Date before = new Date();
+    A result = code.get();
+    final Long duration = new Date().getTime() -
+            before.getTime();
+    output.apply(description + " took " + duration
+            + " milliseconds");
+
+    return result;
+  }
 }

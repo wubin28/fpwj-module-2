@@ -1,13 +1,37 @@
-ProfitJava6.java:9: error: cannot find symbol
-    final Double costs = timed("Cost calculation",
-                         ^
-  symbol:   method timed(String,<anonymous Supplier<Double>>)
-  location: class ProfitJava6
-ProfitJava6.java:17: error: cannot find symbol
-    final Double revenue = timed("Revenue calculation",
-                           ^
-  symbol:   method timed(String,<anonymous Supplier<Double>>)
-  location: class ProfitJava6
+Timing.java:39: error: cannot find symbol
+  private static Function<String, Void> DO_NOTHING = new Function<String, Void>(){
+                 ^
+  symbol:   class Function
+  location: class Timing
+Timing.java:52: error: cannot find symbol
+                            Function<String, Void> output,
+                            ^
+  symbol:   class Function
+  location: class Timing
+ProfitJava6.java:9: error: no suitable method found for timedJava6(String,<anonymous Supplier<Double>>)
+    final Double costs = Timing.timedJava6("Cost calculation",
+                               ^
+    method Timing.<A#1>timedJava6(String,java.util.function.Supplier<A#1>) is not applicable
+      (cannot infer type-variable(s) A#1
+        (argument mismatch; <anonymous Supplier<Double>> cannot be converted to java.util.function.Supplier<A#1>))
+    method Timing.<A#2>timedJava6(String,<any>,java.util.function.Supplier<A#2>) is not applicable
+      (cannot infer type-variable(s) A#2
+        (actual and formal argument lists differ in length))
+  where A#1,A#2 are type-variables:
+    A#1 extends Object declared in method <A#1>timedJava6(String,java.util.function.Supplier<A#1>)
+    A#2 extends Object declared in method <A#2>timedJava6(String,<any>,java.util.function.Supplier<A#2>)
+ProfitJava6.java:17: error: no suitable method found for timedJava6(String,<anonymous Supplier<Double>>)
+    final Double revenue = Timing.timedJava6("Revenue calculation",
+                                 ^
+    method Timing.<A#1>timedJava6(String,java.util.function.Supplier<A#1>) is not applicable
+      (cannot infer type-variable(s) A#1
+        (argument mismatch; <anonymous Supplier<Double>> cannot be converted to java.util.function.Supplier<A#1>))
+    method Timing.<A#2>timedJava6(String,<any>,java.util.function.Supplier<A#2>) is not applicable
+      (cannot infer type-variable(s) A#2
+        (actual and formal argument lists differ in length))
+  where A#1,A#2 are type-variables:
+    A#1 extends Object declared in method <A#1>timedJava6(String,java.util.function.Supplier<A#1>)
+    A#2 extends Object declared in method <A#2>timedJava6(String,<any>,java.util.function.Supplier<A#2>)
 ProfitJava6.java:26: error: cannot find symbol
             LoggerFunctions.info(logger),
             ^
@@ -19,4 +43,9 @@ ProfitJava6.java:34: error: incompatible types: unexpected return value
 ProfitTest.java:33: error: 'void' type not allowed here
         assertEquals(18845.9, ProfitJava6.calculate(), 0.001);
                                                    ^
-5 errors
+Timing.java:39: error: cannot find symbol
+  private static Function<String, Void> DO_NOTHING = new Function<String, Void>(){
+                                                         ^
+  symbol:   class Function
+  location: class Timing
+8 errors
