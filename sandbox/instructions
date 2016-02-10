@@ -1,3 +1,11 @@
+Java Functional Programming by Jessica Kerr
 
-This is an instructor-led exercise with no written instructions.
-Your instructor will explain the exercise.
+module 2
+
+functional programming with java
+  C24C65, tuna, fpwj-original
+  4DAE5E, starfish, fpwj-functionsAsValues
+  BDA089, snake, fpwj-functionsReturningFunctions
+  D96026, salmon, fpwj-typeSafe
+  02DB89, vulture, fpwj-java6
+  23EB21, lobster, fpwj-m2
