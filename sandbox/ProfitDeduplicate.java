@@ -6,11 +6,11 @@ public class ProfitDeduplicate {
 
         final Double costs = Timing.timedDouble(
                 "Cost calculation",
-                () -> calculateCosts());
+                ProfitDeduplicate::calculateCosts);
 
         final Double revenue = Timing.timedDouble(
                 "Revenue calculation",
-                () -> calculateRevenue());
+                ProfitDeduplicate::calculateRevenue);
 
         final Double profit = Timing.timedDouble(
                 "Profit calculation",
