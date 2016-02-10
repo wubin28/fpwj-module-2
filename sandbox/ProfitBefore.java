@@ -31,7 +31,7 @@ public class ProfitBefore {
     }
 
     private static final Random r = new Random();
-    private static final Integer MAX_WORK_TIME_MS = 2000;
+    private static final Integer MAX_WORK_TIME_MS = 200;
     private static void pretendToWorkHard() {
         try {
             Thread.sleep(r.nextInt(MAX_WORK_TIME_MS));
