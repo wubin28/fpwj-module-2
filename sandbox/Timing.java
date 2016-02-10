@@ -54,13 +54,13 @@ public class Timing {
   };
 
   public static <A> A timedJava6(String description,
-                            MySupplier<A> code) {
+                            Supplier<A> code) {
     return timedJava6(description, PRINT_TO_STDOUT, code);
   }
 
   public static <A> A timedJava6(String description,
                             MyFunction<String, Void> output,
-                            MySupplier<A> code) {
+                            Supplier<A> code) {
 
     final Date before = new Date();
     A result = code.get();
