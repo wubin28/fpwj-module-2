@@ -36,16 +36,26 @@ public class Timing {
         return result;
     }
 
-  private static MyFunction<String, Void> DO_NOTHING = new MyFunction<String, Void>(){
-    @Override
-    public Void apply(java.lang.String s) {
-      return null;
-    }
+  private static MyFunction<String, Void> DO_NOTHING = 
+    new MyFunction<String, Void>(){
+        @Override
+        public Void apply(String s) {
+          return null;
+        }
+  };
+
+  private static MyFunction<String, Void> PRINT_TO_STDOUT = 
+    new MyFunction<String, Void>(){
+        @Override
+        public Void apply(String s) {
+          System.out.println(s);
+          return null;
+        }
   };
 
   public static <A> A timedJava6(String description,
                             MySupplier<A> code) {
-    return timedJava6(description, DO_NOTHING, code);
+    return timedJava6(description, PRINT_TO_STDOUT, code);
   }
 
   public static <A> A timedJava6(String description,
