@@ -1,19 +1,11 @@
-Feb 10, 2016 6:16:25 AM ProfitIsolation$$Lambda$10/1146743572 accept
-INFO: ProfitIsolation: Profit calculation took 1280 ms
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.ProfitGeneralize: Cost calculation took 1684 ms
-ProfitGeneralize: Revenue calculation took 490 ms
-ProfitGeneralize: Profit calculation took 1279 ms
-.ProfitNaive: Cost calculation took 81 ms
-ProfitNaive: Revenue calculation took 73 ms
-ProfitNaive: Profit calculation took 97 ms
-..ProfitDeduplicate: Cost calculation took 139 ms
-ProfitDeduplicate: Revenue calculation took 121 ms
-ProfitDeduplicate: Profit calculation took 12 ms
-.ProfitIsolation: Cost calculation took 1614 ms
-ProfitIsolation: Revenue calculation took 1872 ms
-
-Time: 9.117
-
-OK (5 tests)
-
+ProfitBefore.java:5: error: cannot find symbol
+    static final Logger logger = 
+                 ^
+  symbol:   class Logger
+  location: class ProfitBefore
+ProfitBefore.java:6: error: cannot find symbol
+        Logger.getLogger(ProfitBefore.class.getName());
+        ^
+  symbol:   variable Logger
+  location: class ProfitBefore
+2 errors

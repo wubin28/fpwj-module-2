@@ -2,6 +2,9 @@
 import java.util.Random;
 
 public class ProfitBefore {
+    static final Logger logger = 
+        Logger.getLogger(ProfitBefore.class.getName());
+
     public static Double calculate() {
 
         final Double costs = calculateCosts();
@@ -36,7 +39,7 @@ public class ProfitBefore {
         try {
             Thread.sleep(r.nextInt(MAX_WORK_TIME_MS));
         } catch (InterruptedException e) {
-            System.out.println("Work was interrupted. Exception message: " + 
+            logger.severe("Work was interrupted. Exception message: " + 
                 e.getMessage());
         }
     }
