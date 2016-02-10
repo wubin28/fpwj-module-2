@@ -2,7 +2,7 @@
 import java.util.Random;
 
 public class ProfitDeduplicate {
-    public static void calculate() {
+    public static Double calculate() {
 
         final Double costs = Timing.timedDouble(
                 "Cost calculation",
