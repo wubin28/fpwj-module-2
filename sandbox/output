@@ -1,30 +1,27 @@
-ProfitJava6.java:1: error: package com.google.common.base does not exist
-import com.google.common.base.Supplier;
-                             ^
-ProfitJava6.java:11: error: cannot find symbol
+ProfitJava6.java:10: error: cannot find symbol
             new Supplier<Double>() {
                 ^
   symbol:   class Supplier
   location: class ProfitJava6
-ProfitJava6.java:19: error: cannot find symbol
+ProfitJava6.java:18: error: cannot find symbol
             new Supplier<Double>() {
                 ^
   symbol:   class Supplier
   location: class ProfitJava6
-ProfitJava6.java:27: error: cannot find symbol
+ProfitJava6.java:26: error: cannot find symbol
             LoggerFunctions.info(logger),
             ^
   symbol:   variable LoggerFunctions
   location: class ProfitJava6
-ProfitJava6.java:28: error: cannot find symbol
+ProfitJava6.java:27: error: cannot find symbol
             new Supplier<Double>() {
                 ^
   symbol:   class Supplier
   location: class ProfitJava6
-ProfitJava6.java:35: error: incompatible types: unexpected return value
+ProfitJava6.java:34: error: incompatible types: unexpected return value
     return profit;
            ^
 ProfitTest.java:33: error: 'void' type not allowed here
         assertEquals(18845.9, ProfitJava6.calculate(), 0.001);
                                                    ^
-7 errors
+6 errors
