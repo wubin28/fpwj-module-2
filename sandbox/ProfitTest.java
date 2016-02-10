@@ -13,4 +13,9 @@ public class ProfitTest {
         assertEquals(18845.9, ProfitNaive.calculate(), 0.001);
     }
 
+    @Test
+    public void ProfitDeduplicate_should_calculate_profits() {
+        assertEquals(18845.9, ProfitDeduplicate.calculate(), 0.001);
+    }
+
 }
