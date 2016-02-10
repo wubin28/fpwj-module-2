@@ -45,7 +45,7 @@ public class Timing {
 
   public static <A> A timedJava6(String description,
                             MySupplier<A> code) {
-    return timed(description, DO_NOTHING, code);
+    return timedJava6(description, DO_NOTHING, code);
   }
 
   public static <A> A timedJava6(String description,

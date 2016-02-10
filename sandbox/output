@@ -1,14 +1,21 @@
-Timing.java:48: error: no suitable method found for timed(String,MyFunction<String,Void>,MySupplier<A#1>)
-    return timed(description, DO_NOTHING, code);
-           ^
-    method Timing.<A#2>timed(String,Supplier<A#2>) is not applicable
-      (cannot infer type-variable(s) A#2
-        (actual and formal argument lists differ in length))
-    method Timing.<A#3>timed(String,Consumer<String>,Supplier<A#3>) is not applicable
-      (cannot infer type-variable(s) A#3
-        (argument mismatch; MyFunction<String,Void> cannot be converted to Consumer<String>))
-  where A#1,A#2,A#3 are type-variables:
-    A#1 extends Object declared in method <A#1>timedJava6(String,MySupplier<A#1>)
-    A#2 extends Object declared in method <A#2>timed(String,Supplier<A#2>)
-    A#3 extends Object declared in method <A#3>timed(String,Consumer<String>,Supplier<A#3>)
-1 error
+Feb 10, 2016 1:29:58 PM LoggerFunctions$1 apply
+INFO: Profit calculation took 188 milliseconds
+Feb 10, 2016 1:29:59 PM ProfitIsolation$$Lambda$10/200006406 accept
+INFO: ProfitIsolation: Profit calculation took 9 ms
+JUnit version 4.11-SNAPSHOT-20120416-1530
+.ProfitGeneralize: Cost calculation took 185 ms
+ProfitGeneralize: Revenue calculation took 136 ms
+ProfitGeneralize: Profit calculation took 46 ms
+.ProfitNaive: Cost calculation took 191 ms
+ProfitNaive: Revenue calculation took 141 ms
+ProfitNaive: Profit calculation took 158 ms
+...ProfitDeduplicate: Cost calculation took 33 ms
+ProfitDeduplicate: Revenue calculation took 93 ms
+ProfitDeduplicate: Profit calculation took 180 ms
+.ProfitIsolation: Cost calculation took 81 ms
+ProfitIsolation: Revenue calculation took 197 ms
+
+Time: 1.953
+
+OK (6 tests)
+
