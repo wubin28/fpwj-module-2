@@ -12,11 +12,11 @@ public class ProfitIsolation {
 
         final Double costs = timed(
                 "Cost calculation",
-                Example::calculateCosts);
+                ProfitIsolation::calculateCosts);
 
         final Double revenue = timed(
                 "Revenue calculation",
-                Example::calculateRevenue);
+                ProfitIsolation::calculateRevenue);
 
         final Double profit = Timing.timed(
                 "Profit calculation",

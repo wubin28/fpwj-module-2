@@ -1,12 +1,12 @@
-ProfitIsolation.java:15: error: cannot find symbol
-                Example::calculateCosts);
-                ^
-  symbol:   variable Example
+ProfitIsolation.java:13: error: cannot find symbol
+        final Double costs = timed(
+                             ^
+  symbol:   method timed(String,ProfitIsol[...]Costs)
   location: class ProfitIsolation
-ProfitIsolation.java:19: error: cannot find symbol
-                Example::calculateRevenue);
-                ^
-  symbol:   variable Example
+ProfitIsolation.java:17: error: cannot find symbol
+        final Double revenue = timed(
+                               ^
+  symbol:   method timed(String,ProfitIsol[...]venue)
   location: class ProfitIsolation
 ProfitIsolation.java:21: error: method timed in class Timing cannot be applied to given types;
         final Double profit = Timing.timed(
