@@ -1,21 +1,22 @@
 JUnit version 4.11-SNAPSHOT-20120416-1530
-.Cost calculation took 140 ms
-Revenue calculation took 1206 ms
-Profit calculation took 1373 ms
-.Cost calculation took 147 ms
-Revenue calculation took 7 ms
-Profit calculation took 36 ms
-..Cost calculation took 11 ms
-Revenue calculation took 50 ms
-Profit calculation took 147 ms
-.Cost calculation took 147 ms
-Revenue calculation took 1443 ms
-E
-Time: 5.083
+.Cost calculation took 49 ms
+Revenue calculation took 4 ms
+Profit calculation took 116 ms
+.Cost calculation took 1483 ms
+Revenue calculation took 1954 ms
+logger is null?yes
+E.Cost calculation took 225 ms
+Revenue calculation took 232 ms
+Profit calculation took 222 ms
+..Cost calculation took 147 ms
+Revenue calculation took 108 ms
+Profit calculation took 25 ms
+
+Time: 5
 There was 1 failure:
 1) ProfitIsolation_should_calculate_profits(ProfitTest)
 java.lang.NullPointerException
-	at ProfitIsolation.calculate(ProfitIsolation.java:21)
+	at ProfitIsolation.calculate(ProfitIsolation.java:24)
 	at ProfitTest.ProfitIsolation_should_calculate_profits(ProfitTest.java:28)
 
 FAILURES!!!

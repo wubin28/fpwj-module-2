@@ -6,7 +6,9 @@ import java.util.Random;
 
 
 public class ProfitIsolation {
-    static final Logger logger = LogManager.getLogManager().getLogger(ProfitIsolation.class.getName());
+    static final Logger logger = 
+        LogManager.getLogManager().getLogger(
+            ProfitIsolation.class.getName());
 
     public static Double calculate() {
 
@@ -18,6 +20,7 @@ public class ProfitIsolation {
                 "Revenue calculation",
                 ProfitIsolation::calculateRevenue);
 
+        System.out.println("logger is null?" + (logger == null ? "yes" : "no"));
         final Double profit = Timing.timed(
                 "Profit calculation",
                 logger::info,
