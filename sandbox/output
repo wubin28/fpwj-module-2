@@ -1,3 +1,9 @@
+ProfitJava6.java:12: warning: [unchecked] get() in <anonymous ProfitJava6$1> implements <T>get() in Supplier
+              public Double get() {
+                            ^
+  return type requires unchecked conversion from Double to T
+  where T is a type-variable:
+    T extends Object declared in method <T>get()
 ProfitJava6.java:9: error: no suitable method found for timedJava6(String,<anonymous Supplier<Double>>)
     final Double costs = Timing.timedJava6("Cost calculation",
                                ^
@@ -10,6 +16,12 @@ ProfitJava6.java:9: error: no suitable method found for timedJava6(String,<anony
   where A#1,A#2 are type-variables:
     A#1 extends Object declared in method <A#1>timedJava6(String,java.util.function.Supplier<A#1>)
     A#2 extends Object declared in method <A#2>timedJava6(String,Function<String,Void>,java.util.function.Supplier<A#2>)
+ProfitJava6.java:20: warning: [unchecked] get() in <anonymous ProfitJava6$2> implements <T>get() in Supplier
+              public Double get() {
+                            ^
+  return type requires unchecked conversion from Double to T
+  where T is a type-variable:
+    T extends Object declared in method <T>get()
 ProfitJava6.java:17: error: no suitable method found for timedJava6(String,<anonymous Supplier<Double>>)
     final Double revenue = Timing.timedJava6("Revenue calculation",
                                  ^
@@ -27,6 +39,12 @@ ProfitJava6.java:26: error: cannot find symbol
             ^
   symbol:   variable LoggerFunctions
   location: class ProfitJava6
+ProfitJava6.java:29: warning: [unchecked] get() in <anonymous ProfitJava6$3> implements <T>get() in Supplier
+              public Double get() {
+                            ^
+  return type requires unchecked conversion from Double to T
+  where T is a type-variable:
+    T extends Object declared in method <T>get()
 ProfitJava6.java:34: error: incompatible types: unexpected return value
     return profit;
            ^
@@ -47,3 +65,4 @@ Timing.java:48: error: no suitable method found for timed(String,Function<String
     A#2 extends Object declared in method <A#2>timed(String,Supplier<A#2>)
     A#3 extends Object declared in method <A#3>timed(String,Consumer<String>,Supplier<A#3>)
 6 errors
+3 warnings
