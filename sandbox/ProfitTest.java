@@ -1,10 +1,11 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class ProfitBeforeTest {
+public class ProfitTest {
 
     @Test
-    public void life_the_universe_and_everything() {
+    public void ProfitBefore_should_calculate_profits() {
         assertEquals(18845.9, ProfitBefore.calculate(), 0.001);
     }
+
 }
