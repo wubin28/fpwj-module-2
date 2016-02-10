@@ -1,19 +1,4 @@
-Feb 10, 2016 6:30:21 AM ProfitIsolation$$Lambda$10/1146743572 accept
-INFO: ProfitIsolation: Profit calculation took 1897 ms
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.ProfitGeneralize: Cost calculation took 1279 ms
-ProfitGeneralize: Revenue calculation took 404 ms
-ProfitGeneralize: Profit calculation took 577 ms
-.ProfitNaive: Cost calculation took 126 ms
-ProfitNaive: Revenue calculation took 80 ms
-ProfitNaive: Profit calculation took 130 ms
-..ProfitDeduplicate: Cost calculation took 130 ms
-ProfitDeduplicate: Revenue calculation took 185 ms
-ProfitDeduplicate: Profit calculation took 29 ms
-.ProfitIsolation: Cost calculation took 1170 ms
-ProfitIsolation: Revenue calculation took 1655 ms
-
-Time: 8.064
-
-OK (5 tests)
-
+ProfitBefore.java:7: error: non-static variable this cannot be referenced from a static context
+        Logger.getLogger(this.getClass().getName());
+                         ^
+1 error
