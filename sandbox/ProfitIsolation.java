@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class ProfitIsolation {
 
-    final Logger logger = LogManager.getLogger(ProfitIsolation.class.getName());
+    final Logger logger = LogManager.getLogger();
 
     public static Double calculate(final String[] args) {
 
