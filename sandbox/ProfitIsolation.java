@@ -10,11 +10,11 @@ public class ProfitIsolation {
 
     public static Double calculate(final String[] args) {
 
-        final Double costs = timed(
+        final Double costs = Timing.timed(
                 "Cost calculation",
                 ProfitIsolation::calculateCosts);
 
-        final Double revenue = timed(
+        final Double revenue = Timing.timed(
                 "Revenue calculation",
                 ProfitIsolation::calculateRevenue);
 
