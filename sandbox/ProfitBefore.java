@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ProfitBefore {
     static final Logger logger = 
-        Logger.getLogger(this.getClass().getName());
+        Logger.getLogger(ProfitBefore.class.getName());
 
     public static Double calculate() {
 

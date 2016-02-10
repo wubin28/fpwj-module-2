@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class ProfitGeneralize {
     static final Logger logger = 
-        Logger.getLogger(ProfitBefore.class.getName());
+        Logger.getLogger(ProfitGeneralize.class.getName());
 
     public static Double calculate() {
 

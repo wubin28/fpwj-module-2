@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class ProfitDeduplicate {
     static final Logger logger = 
-        Logger.getLogger(ProfitBefore.class.getName());
+        Logger.getLogger(ProfitDeduplicate.class.getName());
 
     public static Double calculate() {
 

@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class ProfitNaive {
   static final Logger logger = 
-    Logger.getLogger(ProfitBefore.class.getName());
+    Logger.getLogger(ProfitNaive.class.getName());
 
   public static Double calculate() {
 
