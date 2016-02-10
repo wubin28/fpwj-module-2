@@ -9,7 +9,7 @@ public class ProfitIsolation {
 
 
     public static Double calculate(final String[] args) {
-        Logger logger = LogManager.getLogger("");
+        Logger logger = LogManager.getLogManager().getLogger("");
 
         final Double costs = timed(
                 "Cost calculation",
