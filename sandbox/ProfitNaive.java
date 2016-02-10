@@ -1,4 +1,4 @@
-
+import java.util.logging.Logger;
 import java.util.Random;
 import java.util.Date;
 
@@ -56,8 +56,8 @@ public class ProfitNaive {
     try {
       Thread.sleep(r.nextInt(MAX_WORK_TIME_MS));
     } catch (InterruptedException e) {
-        System.out.println("Work was interrupted. Exception message: " + 
-            e.getMessage());
+        logger.severe("Work was interrupted. Exception message: " + 
+            e.toString());
     }
   }
 }

@@ -1,19 +1,16 @@
-Feb 10, 2016 6:27:38 AM ProfitIsolation$$Lambda$10/1146743572 accept
-INFO: ProfitIsolation: Profit calculation took 1397 ms
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.ProfitGeneralize: Cost calculation took 1014 ms
-ProfitGeneralize: Revenue calculation took 966 ms
-ProfitGeneralize: Profit calculation took 1877 ms
-.ProfitNaive: Cost calculation took 84 ms
-ProfitNaive: Revenue calculation took 78 ms
-ProfitNaive: Profit calculation took 6 ms
-..ProfitDeduplicate: Cost calculation took 106 ms
-ProfitDeduplicate: Revenue calculation took 15 ms
-ProfitDeduplicate: Profit calculation took 73 ms
-.ProfitIsolation: Cost calculation took 1583 ms
-ProfitIsolation: Revenue calculation took 1114 ms
-
-Time: 8.613
-
-OK (5 tests)
-
+ProfitDeduplicate.java:45: error: cannot find symbol
+            logger.severe("Work was interrupted. Exception message: " + 
+            ^
+  symbol:   variable logger
+  location: class ProfitDeduplicate
+ProfitGeneralize.java:45: error: cannot find symbol
+            logger.severe("Work was interrupted. Exception message: " + 
+            ^
+  symbol:   variable logger
+  location: class ProfitGeneralize
+ProfitNaive.java:59: error: cannot find symbol
+        logger.severe("Work was interrupted. Exception message: " + 
+        ^
+  symbol:   variable logger
+  location: class ProfitNaive
+3 errors

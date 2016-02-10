@@ -1,6 +1,5 @@
 
 import java.util.logging.Logger;
-
 import java.util.Random;
 
 
@@ -49,6 +48,8 @@ public class ProfitIsolation {
         try {
             Thread.sleep(r.nextInt(MAX_WORK_TIME_MS));
         } catch (InterruptedException e) {
+            logger.severe("Work was interrupted. Exception message: " + 
+                e.toString());
         }
     }
 }

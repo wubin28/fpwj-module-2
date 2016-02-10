@@ -1,4 +1,4 @@
-
+import java.util.logging.Logger;
 import java.util.Random;
 
 public class ProfitGeneralize {
@@ -42,8 +42,8 @@ public class ProfitGeneralize {
         try {
             Thread.sleep(r.nextInt(MAX_WORK_TIME_MS));
         } catch (InterruptedException e) {
-            System.out.println("Work was interrupted. Exception message: " + 
-                e.getMessage());
+            logger.severe("Work was interrupted. Exception message: " + 
+                e.toString());
         }
     }
 }
