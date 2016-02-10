@@ -10,11 +10,11 @@ public class ProfitDeduplicate {
 
         final Double revenue = Timing.timedDouble(
                 "Revenue calculation",
-                ProfitDeduplicate::calculateRevenue);
+                () -> calculateRevenue());
 
         final Double profit = Timing.timedDouble(
                 "Profit calculation",
-                ProfitDeduplicate::calculateProfit(costs, revenue));
+                () -> calculateProfit(costs, revenue));
 
         return profit;
 
