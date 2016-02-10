@@ -1,6 +1,11 @@
 JUnit version 4.11-SNAPSHOT-20120416-1530
-.
-Time: 0.007
+.E
+Time: 2.066
+There was 1 failure:
+1) life_the_universe_and_everything(ProfitBeforeTest)
+java.lang.AssertionError: expected:<1.0> but was:<18845.9>
+	at ProfitBeforeTest.life_the_universe_and_everything(ProfitBeforeTest.java:8)
 
-OK (1 test)
+FAILURES!!!
+Tests run: 1,  Failures: 1
 

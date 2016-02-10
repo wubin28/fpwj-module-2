@@ -5,6 +5,6 @@ public class ProfitBeforeTest {
 
     @Test
     public void life_the_universe_and_everything() {
-        assertEquals(1, 1);
+        assertEquals(1.0, ProfitBefore.calculate(), 0.001);
     }
 }
