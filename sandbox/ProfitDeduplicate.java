@@ -8,10 +8,13 @@ public class ProfitDeduplicate {
                 "Cost calculation",
                 () -> calculateCosts());
 
-        // repeat
-        final Double revenue = calculateRevenue();
+        final Double revenue = Timing.timedDouble(
+                "Revenue calculation",
+                () -> calculateRevenue());
 
-        final Double profit = calculateProfit(costs, revenue);
+        final Double profit = Timing.timedDouble(
+                "Profit calculation",
+                () -> calculateProfit(costs, revenue));
 
         return profit;
 
