@@ -1,9 +1,4 @@
-ProfitDeduplicate.java:7: error: cannot find symbol
-        final Double costs = Timing.timedDouble(
-                             ^
-  symbol:   variable Timing
-  location: class ProfitDeduplicate
 ProfitDeduplicate.java:16: error: incompatible types: unexpected return value
         return profit;
                ^
-2 errors
+1 error
