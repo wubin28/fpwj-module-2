@@ -1,9 +1,9 @@
 JUnit version 4.11-SNAPSHOT-20120416-1530
-.Cost calculation took 1084 ms
-Revenue calculation took 1142 ms
-Profit calculation took 465 ms
+.Cost calculation took 1987 ms
+Revenue calculation took 1438 ms
+Profit calculation took 1651 ms
 .
-Time: 4.398
+Time: 7.91
 
 OK (2 tests)
 
