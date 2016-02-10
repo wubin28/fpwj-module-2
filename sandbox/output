@@ -1,23 +1,17 @@
-ProfitJava6.java:10: error: cannot find symbol
+ProfitJava6.java:10: error: type Supplier does not take parameters
             new Supplier<Double>() {
-                ^
-  symbol:   class Supplier
-  location: class ProfitJava6
-ProfitJava6.java:18: error: cannot find symbol
+                        ^
+ProfitJava6.java:18: error: type Supplier does not take parameters
             new Supplier<Double>() {
-                ^
-  symbol:   class Supplier
-  location: class ProfitJava6
+                        ^
 ProfitJava6.java:26: error: cannot find symbol
             LoggerFunctions.info(logger),
             ^
   symbol:   variable LoggerFunctions
   location: class ProfitJava6
-ProfitJava6.java:27: error: cannot find symbol
+ProfitJava6.java:27: error: type Supplier does not take parameters
             new Supplier<Double>() {
-                ^
-  symbol:   class Supplier
-  location: class ProfitJava6
+                        ^
 ProfitJava6.java:34: error: incompatible types: unexpected return value
     return profit;
            ^
