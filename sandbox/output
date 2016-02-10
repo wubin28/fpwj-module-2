@@ -1,27 +1,27 @@
-ProfitJava6.java:9: error: no suitable method found for timedJava6(String,<anonymous Supplier<Double>>)
+ProfitJava6.java:9: error: no suitable method found for timedJava6(String,<anonymous MySupplier<Double>>)
     final Double costs = Timing.timedJava6("Cost calculation",
                                ^
-    method Timing.<A#1>timedJava6(String,java.util.function.Supplier<A#1>) is not applicable
+    method Timing.<A#1>timedJava6(String,Supplier<A#1>) is not applicable
       (cannot infer type-variable(s) A#1
-        (argument mismatch; <anonymous Supplier<Double>> cannot be converted to java.util.function.Supplier<A#1>))
-    method Timing.<A#2>timedJava6(String,Function<String,Void>,java.util.function.Supplier<A#2>) is not applicable
+        (argument mismatch; <anonymous MySupplier<Double>> cannot be converted to Supplier<A#1>))
+    method Timing.<A#2>timedJava6(String,Function<String,Void>,Supplier<A#2>) is not applicable
       (cannot infer type-variable(s) A#2
         (actual and formal argument lists differ in length))
   where A#1,A#2 are type-variables:
-    A#1 extends Object declared in method <A#1>timedJava6(String,java.util.function.Supplier<A#1>)
-    A#2 extends Object declared in method <A#2>timedJava6(String,Function<String,Void>,java.util.function.Supplier<A#2>)
-ProfitJava6.java:17: error: no suitable method found for timedJava6(String,<anonymous Supplier<Double>>)
+    A#1 extends Object declared in method <A#1>timedJava6(String,Supplier<A#1>)
+    A#2 extends Object declared in method <A#2>timedJava6(String,Function<String,Void>,Supplier<A#2>)
+ProfitJava6.java:17: error: no suitable method found for timedJava6(String,<anonymous MySupplier<Double>>)
     final Double revenue = Timing.timedJava6("Revenue calculation",
                                  ^
-    method Timing.<A#1>timedJava6(String,java.util.function.Supplier<A#1>) is not applicable
+    method Timing.<A#1>timedJava6(String,Supplier<A#1>) is not applicable
       (cannot infer type-variable(s) A#1
-        (argument mismatch; <anonymous Supplier<Double>> cannot be converted to java.util.function.Supplier<A#1>))
-    method Timing.<A#2>timedJava6(String,Function<String,Void>,java.util.function.Supplier<A#2>) is not applicable
+        (argument mismatch; <anonymous MySupplier<Double>> cannot be converted to Supplier<A#1>))
+    method Timing.<A#2>timedJava6(String,Function<String,Void>,Supplier<A#2>) is not applicable
       (cannot infer type-variable(s) A#2
         (actual and formal argument lists differ in length))
   where A#1,A#2 are type-variables:
-    A#1 extends Object declared in method <A#1>timedJava6(String,java.util.function.Supplier<A#1>)
-    A#2 extends Object declared in method <A#2>timedJava6(String,Function<String,Void>,java.util.function.Supplier<A#2>)
+    A#1 extends Object declared in method <A#1>timedJava6(String,Supplier<A#1>)
+    A#2 extends Object declared in method <A#2>timedJava6(String,Function<String,Void>,Supplier<A#2>)
 ProfitJava6.java:26: error: cannot find symbol
             LoggerFunctions.info(logger),
             ^
