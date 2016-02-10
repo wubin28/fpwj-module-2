@@ -8,4 +8,9 @@ public class ProfitTest {
         assertEquals(18845.9, ProfitBefore.calculate(), 0.001);
     }
 
+    @Test
+    public void ProfitNaive_should_calculate_profits() {
+        assertEquals(18845.9, ProfitNaive.calculate(), 0.001);
+    }
+
 }
