@@ -1,23 +1,26 @@
-Feb 10, 2016 1:38:02 PM LoggerFunctions$1 apply
-INFO: ProfitJava6: Profit calculation took 113 milliseconds
-Feb 10, 2016 1:38:03 PM ProfitIsolation$$Lambda$10/200006406 accept
-INFO: ProfitIsolation: Profit calculation took 46 ms
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.ProfitGeneralize: Cost calculation took 0 ms
-ProfitGeneralize: Revenue calculation took 190 ms
-ProfitGeneralize: Profit calculation took 37 ms
-.ProfitNaive: Cost calculation took 92 ms
-ProfitNaive: Revenue calculation took 177 ms
-ProfitNaive: Profit calculation took 63 ms
-..ProfitJava6: Cost calculation took 24 milliseconds
-ProfitJava6: Revenue calculation took 35 milliseconds
-.ProfitDeduplicate: Cost calculation took 54 ms
-ProfitDeduplicate: Revenue calculation took 155 ms
-ProfitDeduplicate: Profit calculation took 163 ms
-.ProfitIsolation: Cost calculation took 83 ms
-ProfitIsolation: Revenue calculation took 83 ms
-
-Time: 1.784
-
-OK (6 tests)
-
+Timing.java:57: error: cannot find symbol
+                            MySupplier<A> code) {
+                            ^
+  symbol:   class MySupplier
+  location: class Timing
+Timing.java:63: error: cannot find symbol
+                            MySupplier<A> code) {
+                            ^
+  symbol:   class MySupplier
+  location: class Timing
+ProfitJava6.java:10: error: cannot find symbol
+            new MySupplier<Double>() {
+                ^
+  symbol:   class MySupplier
+  location: class ProfitJava6
+ProfitJava6.java:18: error: cannot find symbol
+            new MySupplier<Double>() {
+                ^
+  symbol:   class MySupplier
+  location: class ProfitJava6
+ProfitJava6.java:27: error: cannot find symbol
+            new MySupplier<Double>() {
+                ^
+  symbol:   class MySupplier
+  location: class ProfitJava6
+5 errors
