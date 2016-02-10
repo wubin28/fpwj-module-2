@@ -1,7 +1,19 @@
-ProfitTest.java:28: error: method calculate in class ProfitIsolation cannot be applied to given types;
-        assertEquals(18845.9, ProfitIsolation.calculate(), 0.001);
-                                             ^
-  required: String[]
-  found: no arguments
-  reason: actual and formal argument lists differ in length
-1 error
+Feb 10, 2016 5:59:50 AM java.util.logging.LogManager$RootLogger log
+INFO: Profit calculation took 695 ms
+JUnit version 4.11-SNAPSHOT-20120416-1530
+.Cost calculation took 551 ms
+Revenue calculation took 101 ms
+Profit calculation took 71 ms
+.Cost calculation took 158 ms
+Revenue calculation took 30 ms
+Profit calculation took 58 ms
+..Cost calculation took 123 ms
+Revenue calculation took 102 ms
+Profit calculation took 176 ms
+.Cost calculation took 1715 ms
+Revenue calculation took 913 ms
+
+Time: 5.074
+
+OK (5 tests)
+

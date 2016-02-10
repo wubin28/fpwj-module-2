@@ -8,7 +8,7 @@ import java.util.Random;
 public class ProfitIsolation {
     static final Logger logger = LogManager.getLogManager().getLogger("");
 
-    public static Double calculate(final String[] args) {
+    public static Double calculate() {
 
         final Double costs = Timing.timed(
                 "Cost calculation",
