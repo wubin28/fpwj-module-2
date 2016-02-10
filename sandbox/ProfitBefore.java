@@ -41,7 +41,7 @@ public class ProfitBefore {
             Thread.sleep(r.nextInt(MAX_WORK_TIME_MS));
         } catch (InterruptedException e) {
             logger.severe("Work was interrupted. Exception message: " + 
-                e.getMessage());
+                e.toString());
         }
     }
 }
