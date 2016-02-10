@@ -1,4 +1,22 @@
-Supplier.java:2: error: <identifier> expected
-    public <T> get();
-                  ^
-1 error
+ProfitJava6.java:9: error: cannot find symbol
+    final Double costs = timed("Cost calculation",
+                         ^
+  symbol:   method timed(String,<anonymous Supplier<Double>>)
+  location: class ProfitJava6
+ProfitJava6.java:17: error: cannot find symbol
+    final Double revenue = timed("Revenue calculation",
+                           ^
+  symbol:   method timed(String,<anonymous Supplier<Double>>)
+  location: class ProfitJava6
+ProfitJava6.java:26: error: cannot find symbol
+            LoggerFunctions.info(logger),
+            ^
+  symbol:   variable LoggerFunctions
+  location: class ProfitJava6
+ProfitJava6.java:34: error: incompatible types: unexpected return value
+    return profit;
+           ^
+ProfitTest.java:33: error: 'void' type not allowed here
+        assertEquals(18845.9, ProfitJava6.calculate(), 0.001);
+                                                   ^
+5 errors
