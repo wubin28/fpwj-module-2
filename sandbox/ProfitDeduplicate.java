@@ -14,7 +14,7 @@ public class ProfitDeduplicate {
 
         final Double profit = Timing.timedDouble(
                 "Profit calculation",
-                () -> calculateProfit(costs, revenue));
+                ProfitDeduplicate::calculateProfit);
 
         return profit;
 

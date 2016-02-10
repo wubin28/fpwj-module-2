@@ -1,12 +1,9 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.Cost calculation took 92 ms
-Revenue calculation took 28 ms
-Profit calculation took 58 ms
-..Cost calculation took 169 ms
-Revenue calculation took 146 ms
-Profit calculation took 163 ms
-
-Time: 1.175
-
-OK (3 tests)
-
+ProfitDeduplicate.java:17: error: incompatible types: invalid method reference
+                ProfitDeduplicate::calculateProfit);
+                ^
+    method calculateProfit in class ProfitDeduplicate cannot be applied to given types
+      required: Double,Double
+      found: no arguments
+      reason: actual and formal argument lists differ in length
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
