@@ -2,6 +2,9 @@ import java.util.logging.Logger;
 import java.util.Random;
 
 public class ProfitGeneralize {
+    static final Logger logger = 
+        Logger.getLogger(ProfitBefore.class.getName());
+
     public static Double calculate() {
 
         final Double costs = Timing.timed(

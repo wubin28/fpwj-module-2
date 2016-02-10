@@ -3,6 +3,8 @@ import java.util.Random;
 import java.util.Date;
 
 public class ProfitNaive {
+  static final Logger logger = 
+    Logger.getLogger(ProfitBefore.class.getName());
 
   public static Double calculate() {
 
