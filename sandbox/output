@@ -1,7 +1,4 @@
-LoggerFunctions.java:1: error: package org.apache.logging.log4j does not exist
-import org.apache.logging.log4j.Logger;
-                               ^
-LoggerFunctions.java:5: error: cannot find symbol
+LoggerFunctions.java:4: error: cannot find symbol
   public static MyFunction<String, Void> info(final Logger logger) {
                                                     ^
   symbol:   class Logger
@@ -25,4 +22,4 @@ Timing.java:48: error: no suitable method found for timed(String,MyFunction<Stri
     A#1 extends Object declared in method <A#1>timedJava6(String,MySupplier<A#1>)
     A#2 extends Object declared in method <A#2>timed(String,Supplier<A#2>)
     A#3 extends Object declared in method <A#3>timed(String,Consumer<String>,Supplier<A#3>)
-5 errors
+4 errors
