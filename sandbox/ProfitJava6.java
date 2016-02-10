@@ -4,7 +4,7 @@ import java.util.Random;
 public class ProfitJava6 {
   static final Logger logger = Logger.getLogger(ProfitJava6.class.getName());
 
-  public static void calculate() {
+  public static Double calculate() {
 
     final Double costs = Timing.timedJava6("Cost calculation",
             new MySupplier<Double>() {
