@@ -1,2 +1,2 @@
-public interface Supplier {
+public interface Supplier<T> {
 }
