@@ -12,15 +12,15 @@ public class ProfitIsolation {
     public static Double calculate() {
 
         final Double costs = Timing.timed(
-                "Cost calculation",
+                "ProfitIsolation: Cost calculation",
                 ProfitIsolation::calculateCosts);
 
         final Double revenue = Timing.timed(
-                "Revenue calculation",
+                "ProfitIsolation: Revenue calculation",
                 ProfitIsolation::calculateRevenue);
 
         final Double profit = Timing.timed(
-                "Profit calculation",
+                "ProfitIsolation: Profit calculation",
                 logger::info,
                 () -> calculateProfit(costs, revenue));
 

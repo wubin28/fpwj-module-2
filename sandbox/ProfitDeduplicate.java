@@ -5,15 +5,15 @@ public class ProfitDeduplicate {
     public static Double calculate() {
 
         final Double costs = Timing.timedDouble(
-                "Cost calculation",
+                "ProfitDeduplicate: Cost calculation",
                 ProfitDeduplicate::calculateCosts);
 
         final Double revenue = Timing.timedDouble(
-                "Revenue calculation",
+                "ProfitDeduplicate: Revenue calculation",
                 () -> calculateRevenue());
 
         final Double profit = Timing.timedDouble(
-                "Profit calculation",
+                "ProfitDeduplicate: Profit calculation",
                 () -> calculateProfit(costs, revenue));
 
         return profit;

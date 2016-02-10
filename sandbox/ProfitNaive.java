@@ -11,7 +11,7 @@ public class ProfitNaive {
     final Long costsDuration =
             new Date().getTime() - beforeCosts.getTime();
     System.out.println(
-            "Cost calculation took " + costsDuration + " ms");
+            "ProfitNaive: Cost calculation took " + costsDuration + " ms");
 
 
     final Date beforeRevenue = new Date();
@@ -19,7 +19,7 @@ public class ProfitNaive {
     final Long revenueDuration =
             new Date().getTime() - beforeRevenue.getTime();
     System.out.println(
-            "Revenue calculation took " + revenueDuration + " ms");
+            "ProfitNaive: Revenue calculation took " + revenueDuration + " ms");
 
 
     final Date beforeProfit = new Date();
@@ -27,7 +27,7 @@ public class ProfitNaive {
     final Long profitDuration =
             new Date().getTime() - beforeProfit.getTime();
     System.out.println(
-            "Profit calculation took " + profitDuration + " ms");
+            "ProfitNaive: Profit calculation took " + profitDuration + " ms");
 
     return profit;
 

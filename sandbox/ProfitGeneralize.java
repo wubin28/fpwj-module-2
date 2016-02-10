@@ -5,15 +5,15 @@ public class ProfitGeneralize {
     public static Double calculate() {
 
         final Double costs = Timing.timed(
-                "Cost calculation",
+                "ProfitGeneralize: Cost calculation",
                 ProfitGeneralize::calculateCosts);
 
         final Double revenue = Timing.timed(
-                "Revenue calculation",
+                "ProfitGeneralize: Revenue calculation",
                 ProfitGeneralize::calculateRevenue);
 
         final Double profit = Timing.timed(
-                "Profit calculation",
+                "ProfitGeneralize: Profit calculation",
                 () -> calculateProfit(costs, revenue));
 
         return profit;

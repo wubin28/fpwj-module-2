@@ -1,14 +1,14 @@
-Feb 10, 2016 6:12:08 AM ProfitIsolation$$Lambda$10/1768305536 accept
-INFO: Profit calculation took 387 ms
+Feb 10, 2016 6:15:29 AM ProfitIsolation$$Lambda$10/1768305536 accept
+INFO: ProfitIsolation: Profit calculation took 970 ms
 JUnit version 4.11-SNAPSHOT-20120416-1530
-..Cost calculation took 47 ms
-Revenue calculation took 128 ms
-Profit calculation took 137 ms
-..Cost calculation took 116 ms
-Revenue calculation took 49 ms
-Profit calculation took 68 ms
+..ProfitNaive: Cost calculation took 88 ms
+ProfitNaive: Revenue calculation took 129 ms
+ProfitNaive: Profit calculation took 174 ms
+..ProfitDeduplicate: Cost calculation took 174 ms
+ProfitDeduplicate: Revenue calculation took 119 ms
+ProfitDeduplicate: Profit calculation took 31 ms
 .
-Time: 4.314
+Time: 7.187
 
 OK (5 tests)
 
