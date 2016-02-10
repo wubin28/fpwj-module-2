@@ -1,19 +1,18 @@
 
 import java.util.Random;
-import static com.jessitron.fp4j.m2.iv_generalizeType.Timing.timed;
 
 public class ProfitGeneralize {
     public static Double calculate() {
 
-        final Double costs = timed(
+        final Double costs = Timing.timed(
                 "Cost calculation",
                 Example::calculateCosts);
 
-        final Double revenue = timed(
+        final Double revenue = Timing.timed(
                 "Revenue calculation",
                 Example::calculateRevenue);
 
-        final Double profit = timed(
+        final Double profit = Timing.timed(
                 "Profit calculation",
                 () -> calculateProfit(costs, revenue));
 

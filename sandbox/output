@@ -1,22 +1,11 @@
-ProfitGeneralize.java:3: error: package com.jessitron.fp4j.m2.iv_generalizeType does not exist
-import static com.jessitron.fp4j.m2.iv_generalizeType.Timing.timed;
-                                                     ^
-ProfitGeneralize.java:3: error: static import only from classes and interfaces
-import static com.jessitron.fp4j.m2.iv_generalizeType.Timing.timed;
-^
-ProfitGeneralize.java:10: error: cannot find symbol
+ProfitGeneralize.java:9: error: cannot find symbol
                 Example::calculateCosts);
                 ^
   symbol:   variable Example
   location: class ProfitGeneralize
-ProfitGeneralize.java:14: error: cannot find symbol
+ProfitGeneralize.java:13: error: cannot find symbol
                 Example::calculateRevenue);
                 ^
   symbol:   variable Example
   location: class ProfitGeneralize
-ProfitGeneralize.java:16: error: cannot find symbol
-        final Double profit = timed(
-                              ^
-  symbol:   method timed(String,()->calcul[...]enue))
-  location: class ProfitGeneralize
-5 errors
+2 errors
