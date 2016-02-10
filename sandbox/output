@@ -1,21 +1,21 @@
-Feb 10, 2016 1:29:58 PM LoggerFunctions$1 apply
-INFO: Profit calculation took 188 milliseconds
-Feb 10, 2016 1:29:59 PM ProfitIsolation$$Lambda$10/200006406 accept
-INFO: ProfitIsolation: Profit calculation took 9 ms
+Feb 10, 2016 1:30:55 PM LoggerFunctions$1 apply
+INFO: ProfitJava6: Profit calculation took 135 milliseconds
+Feb 10, 2016 1:30:56 PM ProfitIsolation$$Lambda$10/200006406 accept
+INFO: ProfitIsolation: Profit calculation took 191 ms
 JUnit version 4.11-SNAPSHOT-20120416-1530
-.ProfitGeneralize: Cost calculation took 185 ms
-ProfitGeneralize: Revenue calculation took 136 ms
-ProfitGeneralize: Profit calculation took 46 ms
-.ProfitNaive: Cost calculation took 191 ms
-ProfitNaive: Revenue calculation took 141 ms
-ProfitNaive: Profit calculation took 158 ms
-...ProfitDeduplicate: Cost calculation took 33 ms
-ProfitDeduplicate: Revenue calculation took 93 ms
-ProfitDeduplicate: Profit calculation took 180 ms
-.ProfitIsolation: Cost calculation took 81 ms
-ProfitIsolation: Revenue calculation took 197 ms
+.ProfitGeneralize: Cost calculation took 188 ms
+ProfitGeneralize: Revenue calculation took 123 ms
+ProfitGeneralize: Profit calculation took 164 ms
+.ProfitNaive: Cost calculation took 37 ms
+ProfitNaive: Revenue calculation took 45 ms
+ProfitNaive: Profit calculation took 75 ms
+...ProfitDeduplicate: Cost calculation took 144 ms
+ProfitDeduplicate: Revenue calculation took 166 ms
+ProfitDeduplicate: Profit calculation took 77 ms
+.ProfitIsolation: Cost calculation took 32 ms
+ProfitIsolation: Revenue calculation took 44 ms
 
-Time: 1.953
+Time: 1.93
 
 OK (6 tests)
 

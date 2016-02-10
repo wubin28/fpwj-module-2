@@ -6,7 +6,7 @@ public class ProfitJava6 {
 
   public static Double calculate() {
 
-    final Double costs = Timing.timedJava6("Cost calculation",
+    final Double costs = Timing.timedJava6("ProfitJava6: Cost calculation",
             new MySupplier<Double>() {
               @Override
               public Double get() {
@@ -14,7 +14,7 @@ public class ProfitJava6 {
               }
             });
 
-    final Double revenue = Timing.timedJava6("Revenue calculation",
+    final Double revenue = Timing.timedJava6("ProfitJava6: Revenue calculation",
             new MySupplier<Double>() {
               @Override
               public Double get() {
@@ -22,7 +22,7 @@ public class ProfitJava6 {
               }
             });
 
-    final Double profit = Timing.timedJava6("Profit calculation",
+    final Double profit = Timing.timedJava6("ProfitJava6: Profit calculation",
             LoggerFunctions.info(logger),
             new MySupplier<Double>() {
               @Override
