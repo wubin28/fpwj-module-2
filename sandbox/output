@@ -1,3 +1,8 @@
+Timing.java:27: error: cannot find symbol
+                              Consumer<String> printer,
+                              ^
+  symbol:   class Consumer
+  location: class Timing
 ProfitIsolation.java:13: error: cannot find symbol
         final Double costs = timed(
                              ^
@@ -8,15 +13,6 @@ ProfitIsolation.java:17: error: cannot find symbol
                                ^
   symbol:   method timed(String,ProfitIsol[...]venue)
   location: class ProfitIsolation
-ProfitIsolation.java:21: error: method timed in class Timing cannot be applied to given types;
-        final Double profit = Timing.timed(
-                                    ^
-  required: String,Supplier<A>
-  found: String,logger::info,()->calcul[...]enue)
-  reason: cannot infer type-variable(s) A
-    (actual and formal argument lists differ in length)
-  where A is a type-variable:
-    A extends Object declared in method <A>timed(String,Supplier<A>)
 ProfitIsolation.java:23: error: non-static variable logger cannot be referenced from a static context
                 logger::info,
                 ^
@@ -26,4 +22,12 @@ ProfitTest.java:28: error: method calculate in class ProfitIsolation cannot be a
   required: String[]
   found: no arguments
   reason: actual and formal argument lists differ in length
-5 errors
+Timing.java:18: error: cannot find symbol
+        final Consumer<String> defaultPrinter = System.out::println;
+              ^
+  symbol:   class Consumer
+  location: class Timing
+Timing.java:18: error: method reference not expected here
+        final Consumer<String> defaultPrinter = System.out::println;
+                                                ^
+7 errors
